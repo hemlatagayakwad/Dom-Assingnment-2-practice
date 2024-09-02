@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-cont{
+            height: 100%;
+            width: 40%;
+            padding: 10px;
+        }
+        .child-top{
+            height: 25%;
+            width: 100%;
+            background-color: beige;
+            
+            
+        }
+        .child-bottom{
+            height: 60%;
+            width: 100%;
+            background-color: blanchedalmond;
+            
+        }
+        .tip{
+            height: 15%;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .billamount{
+            padding: 10px;
+        }
+        .inamount{
+            height: 30px;
+            width: 400px;
+            margin-top: 5px;
+        }
+        
+        .child-bottom-2{
+            height: 15%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: blanchedalmond;
+
+        }
+         .btn{ 
+            padding: 5px;
+            background-color: blue;
+            border-radius: 5px;
+            color: aliceblue;
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+        <div class="child-top">
+
+        </div>
+        <div class="child-bottom">
+         <div class="tip">
+        <h1>Tip Calculator</h1>
+        </div>
+        <div class="billamount">
+            BILL AMOUNT <br>
+            <input id="inputA" type="number" class="inamount">
+
+            <br><br>
+            PERCENTAGE TIP <br>
+            <input id="inputB" type="number" class="inamount">
+
+            <br><br>
+            TIP AMOUNT <br>
+            <input id="inputC" type="text" class="inamount">
+            <br><br>
+             TOTAL <br>
+        <input id="total" type="text" class="inamount"> 
+       </div>
+       </div>
+        <div class="child-bottom-2">
+            <button id="myBtn" onclick="calculator()" class="btn btn-primary">CALCULATE</button>
+        </div>
+
+    </div>
+    <script src="que3.js" ></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent{
+        height: 100%;
+        width: 50%;
+        background-color: beige;
+      }
+      .top{
+        height: 40%;
+        width: 100%;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2wa79Iu5Hc6tWwwtm9YZj7daCD2m8QuAYKQ&s");
+        background-size: cover;
+        margin-bottom: 10px;
+      }
+      .bottom{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .child-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .inputclass{
+        width: 50px;
+        margin-right: 15px;
+        border: 4px solid gray;
+      }
+      .inputclass-1{
+        width: 100px;
+        height: 50px;
+        border: 4px solid gray;
+        margin-left: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+      <div class="top"></div>
+      <div class="bottom">
+        <div type="number" class="inputclass" id="inputOne" style="height: 50px; width: 50px; border: 1px solid black;display: flex;justify-content: center;align-items: center;border: 4px solid gray; "></div>
+        <h3>+</h3>
+        <div class="inputclass" style="margin-left: 10px; height: 50px; width: 50px; border: 1px solid black;display: flex;justify-content: center;align-items: center;border: 4px solid gray;" id="inputSecond"></div>
+       <h3>=</h3>
+       <input type="number" class="inputclass-1" id="result">
+      </div>
+      <div class="child-bottom">
+        <button onclick="buttonOne()" id="checkNumber" class="btn btn-primary" style="margin-right: 15px;">Check</button>
+        <button onclick="buttonTwo()" id="restartNumber" class="btn btn-primary">Restart</button>
+      </div>
+       <div id="error" class="text-success">
+        <p id="alert" class="text-success" style="text-align: center; margin-top: 20px;"></p>
+      </div>
+    </div>
+    <script src="que5.js"></script>
+</body>
+</html>
